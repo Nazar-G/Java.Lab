@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="txtLicznil" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btnMain" layoutX="660.0" layoutY="30.0" mnemonicParsing="false" onAction="#onBtnAction" rotate="15.6" text="Kliknij mnie!" textOverrun="CLIP">
+         <textFill>
+            <RadialGradient centerX="0.5155555725097656" centerY="0.46183206106870234" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.12263956665992737" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8947368264198303" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtLicznik" layoutX="14.0" layoutY="44.0" rotate="-15.6">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
